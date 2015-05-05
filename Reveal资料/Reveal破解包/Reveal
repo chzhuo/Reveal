@@ -1,0 +1,6 @@
+#!/bin/bash
+Reveal_PATH="`dirname "${0}"`"
+Reveal_BIN="`dirname "${0}"`"/Reveal_
+
+export DYLD_INSERT_LIBRARIES="${Reveal_PATH}/ChinaPYG.dylib"
+"$Reveal_BIN"
